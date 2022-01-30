@@ -1,0 +1,6 @@
+fastapi
+torch
+PIL
+numpy
+pydantic
+typing
