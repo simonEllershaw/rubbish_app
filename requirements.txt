@@ -1,6 +1,7 @@
 fastapi
 torch
-PIL
+pillow
 numpy
 pydantic
 typing
+json
