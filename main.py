@@ -26,7 +26,7 @@ def load_model():
     model = models.resnet18(pretrained=True)
     num_ftrs = model.fc.in_features
     model.fc = nn.Linear(num_ftrs, 3)
-    model.load_state_dict(torch.load('base_model (1).pt'))
+    model.load_state_dict(torch.load('base_model.pt'))
     model.eval()
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     model.to(device)
